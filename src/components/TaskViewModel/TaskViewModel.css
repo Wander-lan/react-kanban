@@ -1,0 +1,7 @@
+.task-lists-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    max-width: 80vw;
+    margin: 1rem auto;
+}
