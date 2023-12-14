@@ -1,24 +1,73 @@
-.task-item {
-    background-color: #fff;
-    border-radius: 3px;
-    box-shadow: 0 1px 0 rgba(9, 30, 66, 0.25);
-    cursor: pointer;
+  .task-item {
+    width: 90%;
+  }
+
+  .task-closed {
+    min-height: 10px;
+    background-color: #dfdfdf;
+    border-radius: 8px;
     margin-bottom: 8px;
-    width: 100%;
     padding: 8px 4px;
     color: #222;
     font-size: 14px;
   }
-  
-  .task-item input[type="text"] {
-    border: none;
-    font-size: 14px;
-    display: block;
+
+  .task-open-modal {
+    position: absolute;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+
+  .modal-container {
+    margin: auto;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 15px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 5px 5px #2222224b;
+  }
+
+  .modal-header {
+    display: flex;
+    justify-content: end;
+    padding: 0.5rem;
+  }
+
+  .close-btn {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #474747;
+    border-radius: 100%;
+  }
+
+  .task-closed, .close-btn, .editable-title-container {
+    cursor: pointer;
+  }
+
+  .title-input, .editable-title-container {
+    display: flex;
+    align-self: flex-start;
+    font-size: 18px;
+    font-weight: bold;
     width: 100%;
   }
-  
-  .task-item select {
-    display: block;
-    width: 100%;
-    margin-top: 8px;
+
+  .task-closed {
+    min-height: 10px;
+  }
+
+  .modal-content {
+    padding: 0 1rem;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    text-align: start;
+    justify-content: space-between;
+  }
+
+  .modal-content select {
+    height: fit-content;
   }
